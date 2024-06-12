@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "PyNacosConfig"
+name = "py-nacos-config"
 version = "0.0.1"
 authors = [
     { name="kangkang223", email="chenwk.top@foxmail.com" },
@@ -13,9 +13,11 @@ readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache License",
+    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+[tool.poetry.packages]
+myproject = { include = "py_nacos_config" }
 
 [project.urls]
 Homepage = "https://github.com/Good0007/py-nacos-config.git"
